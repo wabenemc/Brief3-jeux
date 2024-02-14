@@ -1,0 +1,137 @@
+body,
+html {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Style de base pour le texte */
+  background-image: url(./poulousse.jpg);
+  font-family: "Eater", serif;
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+}
+
+#game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centrer le contenu verticalement */
+  position: relative;
+}
+
+#start-button {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#score {
+  position: absolute;
+  top: 80%;
+  right: auto; /* Ajustez selon vos besoins */
+}
+
+#score-value {
+  font-weight: bold;
+}
+
+#taupes-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Disposition des taupes en grille 3x3 */
+  gap: 10px; /* Espacement entre les taupes */
+  width: 300px; /* Largeur du conteneur des taupes */
+  position: relative;
+  background-color: #8c0b0b;
+}
+
+.taupe {
+ 
+  background-size: cover; /* S'assure que l'image couvre entièrement l'élément */
+  cursor: pointer; /* Change le curseur en main lorsque vous survolez une taupe */
+  width: 100%; /* Les taupes prennent toute la largeur de leur cellule */
+  height: 100px; /* Hauteur fixe pour les taupes */
+}
+**********************************************************
+/* Conteneur Flex */
+.grille-3x3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px; /* Ou toute autre largeur max */
+  margin: auto;
+}
+
+/* Éléments Flex */
+
+/* Responsive */
+@media (max-width: 600px) {
+  .grille-3x3 span {
+    flex: 0 0 50%; /* Sur les petits écrans, passe à 2 colonnes */
+  }
+}
+
+@media (max-width: 400px) {
+  .grille-3x3 span {
+    flex: 0 0 100%; /* Sur les très petits écrans, passe à 1 colonne */
+    grid-gap: 5px; /* Espacement entre les cases */
+  }
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*********************************************************************
+  /* Conteneur du jeu */
+#game-container {
+  width: 300px; /* Largeur du conteneur */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Grille */
+.grille-3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+}
+
+/* Case */
+.case {
+  width: 90px; /* Largeur de chaque case */
+  height: 90px; /* Hauteur de chaque case */
+  background-color: #4d3712; /* Couleur de fond */
+  border: 1px solid #4d3712; /* Bordure */
+  border-radius: 50%;
+}
+
+.case img {
+  width: 100%; /* Ajustez la taille des images selon vos besoins */
+  height: auto;
+  border-radius: 50px;
+  border: #4d3712;
+}
+
+/* Style lorsque cliqué */
+.case:active {
+  background-color: #ccc; /* Couleur de fond lors du clic */
+}
+
+/*homme page*/
+.title {
+  padding: 100px;
+  color: #82561f;
+}
+
+.start {
+  border-radius: 50px;
+}
+.number {
+  padding: 90px;
+}
