@@ -1,23 +1,34 @@
 body {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Pleine hauteur de la fenêtre */
-    margin: 0;
-   background-image: url(./poulousse.jpg);
-  }
-  
-  .bloc-start {
-    text-align: center; /* Centrer le contenu horizontalement */
-  }
-  
-  .button-start {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: rgb(89, 6, 222);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
- 
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Pleine hauteur de la fenêtre */
+  margin: 0;
+  background-image: url(./poulousse.jpg);
+}
+
+.eater-regular {
+  font-family: "Eater", serif;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+}
+
+.inputText {
+  align-items: center;
+  width: 50px;
+}
+
+.bloc-start {
+  text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: rgb(243, 240, 247);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

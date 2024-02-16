@@ -20,10 +20,10 @@ body {
 
 #start-button {
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 50%;
   background-color: #4d3712;
-  color: chartreuse;
+  color: rgb(237, 241, 233);
   border-radius: 50px;
   transform: translateX(-50%);
 }
@@ -36,7 +36,6 @@ body {
 
 .score-value {
   font-weight: bold;
-
 }
 
 #taupes-container {
@@ -52,7 +51,6 @@ body {
 }
 
 .taupe {
- 
   background-size: cover; /* S'assure que l'image couvre entièrement l'élément */
   cursor: pointer; /* Change le curseur en main lorsque vous survolez une taupe */
   width: 100%; /* Les taupes prennent toute la largeur de leur cellule */
@@ -97,8 +95,6 @@ body {
 *********************************************************************
   /* Conteneur du jeu */
 #game-container {
-  width: 300px; /* Largeur du conteneur */
-  margin: 0 auto; /* Centrage horizontal */
 }
 
 /* Grille */
@@ -144,5 +140,4 @@ body {
 .scoretime {
   text-align: right;
   font-weight: bold;
-
 }
