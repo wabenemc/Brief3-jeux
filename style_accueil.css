@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+    margin: 0;
+   background-image: url(./poulousse.jpg);
+  }
+  
+  .bloc-start {
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  
+  .button-start {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: rgb(89, 6, 222);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 

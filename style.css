@@ -1,9 +1,10 @@
-body,
-html {
+body {
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif; /* Style de base pour le texte */
   background-image: url(./poulousse.jpg);
+  background-size: cover;
+  background-repeat: none;
   font-family: "Eater", serif;
   font-family: "Press Start 2P", system-ui;
   text-align: center;
@@ -19,8 +20,11 @@ html {
 
 #start-button {
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 50%;
+  background-color: #4d3712;
+  color: chartreuse;
+  border-radius: 50px;
   transform: translateX(-50%);
 }
 
@@ -30,8 +34,9 @@ html {
   right: auto; /* Ajustez selon vos besoins */
 }
 
-#score-value {
+.score-value {
   font-weight: bold;
+
 }
 
 #taupes-container {
@@ -134,4 +139,10 @@ html {
 }
 .number {
   padding: 90px;
+}
+
+.scoretime {
+  text-align: right;
+  font-weight: bold;
+
 }
